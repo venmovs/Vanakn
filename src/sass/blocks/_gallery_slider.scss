@@ -1,0 +1,52 @@
+.gallery_slider{
+  &__wrapper{
+    margin: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__prev{
+      height: 400px;
+      width: 60px;
+      margin-right: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &__next{
+      margin-left: 30px;
+      height: 400px;
+      width: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &__img{
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  &__points{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__item{
+      margin: 5px;
+      width: 8px;
+      height: 8px;
+      border-radius: 100%;
+      background: #EBEBEB;
+      &__active{
+        margin: 5px;
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+        background: #000000;
+      }
+    }
+  }
+}

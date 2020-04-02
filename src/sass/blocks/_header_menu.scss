@@ -58,24 +58,26 @@ img {
   }
 }
 
-.telephone{
 
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  right: 10px;
+
+.paige_menu{
+  margin-top: 40px;
   display: flex;
-  align-items: center;
   justify-content: center;
-  width: 280px;
-  height: 50px;
-  background: #FFFFFF;
-  border-radius: 20px;
+  &__item{
+    margin: 5px;
 
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
 
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 30px;
-  color: #000000;
+    color: #000000;
+    &_active{
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 30px;
+      color: #000000;
+    }
+  }
 }

@@ -1,0 +1,97 @@
+.footer{
+  width: 100%;
+  min-height: 250px;
+  background: #202327;
+  padding: 25px;
+  &__tittle{
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 29px;
+    color: #FFFFFF;
+  }
+  &__wrapper{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__left__tel{
+    display: flex;
+    margin-bottom: 30px;
+    margin-top: 100px;
+    &__tittle{
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 21px;
+      color: #FFFFFF;
+      margin-right: 20px;
+    }
+    &__telephone{
+      display: flex;
+      flex-direction: column;
+      &__item{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 21px;
+        color: #FFFFFF;
+      }
+    }
+  }
+  &__left__mail{
+    display: flex;
+    &__tittle{
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 21px;
+      color: #FFFFFF;
+      margin-right: 20px;
+    }
+    &__value{
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 21px;
+      color: #FFFFFF;
+    }
+  }
+  &__mid{
+    &__tittle{
+      margin-top: 80px;
+      margin-bottom: 20px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 21px;
+      color: #FFFFFF;
+      text-align: center;
+    }
+    &__wrapper{
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  &__right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__gerb{
+      margin-top: 60px;
+      width: 94px;
+      height: 90px;
+      margin-bottom: 20px;
+    }
+    &__location{
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 21px;
+
+      color: #FFFFFF;
+      text-align: center;
+    }
+  }
+}

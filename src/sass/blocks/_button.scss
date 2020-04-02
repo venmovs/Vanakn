@@ -1,0 +1,39 @@
+.button {
+  min-width: 260px;
+  height: 50px;
+  background: #FFFFFF;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #000000;
+
+  &__telephone{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+  }
+
+  &__black{
+    background: #202327;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    color: #FFFFFF;
+  }
+}
+
+.button__telephone:hover{
+  outline: none;
+   box-shadow: inset 0px -4px 4px rgba(0, 0, 0, 0.25);
+ }
+
+.button__black:hover{
+  background: #0085FF;
+}
+
+
+
