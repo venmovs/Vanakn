@@ -39,6 +39,17 @@
     background: #EBEBEB;
     padding: 40px;
 
+    &__twink__wrapper{
+      display: none;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 16px;
+      text-align: center;
+
+      color: #000000;
+    }
+
     &__wrapper {
       display: flex;
       justify-content: center;
@@ -56,7 +67,7 @@
     }
 
     &__item {
-      min-width: 310px;
+      width: 310px;
       height: 389px;
       display: flex;
       flex-direction: column;
@@ -66,6 +77,14 @@
       border-radius: 50px;
       padding: 20px;
       margin: 10px;
+      &:hover{
+        .main_page__UTP__main__wrapper{
+          display: none;
+        }
+        .main_page__UTP__twink__wrapper{
+          display: block;
+        }
+      }
 
       &__number {
         font-style: normal;
@@ -233,3 +252,187 @@
   }
 }
 
+@media screen and (max-width: 968px) {
+  .main_page {
+    display: block;
+
+    &__h1 {
+      padding: 5px;
+
+      &__right {
+        display: none;
+      }
+
+      &__tittle {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+
+        color: #000000;
+      }
+
+      &__sub_tittle {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 30px;
+        color: #000000;
+      }
+    }
+
+    &__h1__left {
+      margin: 0 auto;
+      max-width: 320px;
+    }
+
+    &__UTP {
+      width: 100%;
+
+      &__wrapper {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+    &__forms {
+      width: calc(100% - 20px);
+      min-height: 400px;
+      margin: 50px auto 50px;
+      background: #202327;
+      border-radius: 20px;
+      padding: 5px;
+
+      &__tittle {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 30px;
+
+        text-align: center;
+        width: 282px;
+        color: #FFFFFF;
+      }
+
+      &__tittle span {
+        text-decoration: underline;
+      }
+
+      &__inputs {
+        display: block;
+        margin: 10px auto;
+        padding: 10px;
+        background: #FFFFFF;
+        border-radius: 20px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 30px;
+        color: rgba(0, 0, 0, 0.5);
+        border: none;
+
+        width: 255px;
+        height: 30px;
+        left: 33px;
+        top: 1166px;
+      }
+
+      &__radiobutton__tittle {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 30px;
+        text-align: center;
+        color: #FFFFFF;
+      }
+
+      &__radiobutton {
+        display: flex;
+        justify-content: center;
+
+        &__messenger {
+          & input {
+            display: none;
+          }
+
+          &__visual {
+            width: 80px;
+            height: 30px;
+            background: #FFFFFF;
+            border-radius: 20px;
+            margin: 5px;
+
+            font-style: normal;
+            font-weight: normal;
+            font-size: 10px;
+            line-height: 32px;
+            text-align: center;
+            color: rgba(0, 0, 0, 0.5);
+          }
+
+          & input:checked {
+            + .main_page__forms__radiobutton__messenger__visual {
+              background: #0085FF;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 10px;
+              line-height: 32px;
+              text-align: center;
+              color: #FFFFFF;
+            }
+          }
+        }
+
+        &__button {
+          width: 268px;
+          height: 50px;
+
+
+          background: #0085FF;
+          box-shadow: inset -4px -4px 4px rgba(0, 0, 0, 0.25);
+          border-radius: 20px;
+
+          font-style: normal;
+          font-weight: 500;
+          font-size: 12px;
+          line-height: 30px;
+          text-transform: uppercase;
+
+          color: #FFFFFF;
+        }
+
+        &__button:hover {
+          box-shadow: inset -4px -4px 4px rgba(0, 0, 0, 0.25);
+        }
+      }
+    }
+    &__about_us {
+      padding: 20px;
+      width: 100%;
+      min-height: 200px;
+
+      background: #EBEBEB;
+
+      &__tittle {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 30px;
+        color: #000000;
+        text-align: center;
+      }
+
+      &__sub_tittle {
+        margin-top: 30px;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 30px;
+        color: #000000;
+      }
+    }
+
+  }
+}

@@ -17,7 +17,7 @@
 
 
     <div class="languages">
-        <label class="region" for="language-russian">
+        <label class="region active_language" for="language-russian">
             <img src="img/languages/Russia.png" alt="Russian">
             <input id="language-russian" checked="checked" name="language" type="radio">
             <span class="active_language"></span>
@@ -40,21 +40,59 @@
     </div>
 
     <button class="button button__telephone">Бесплатная консультация</button>
-
-
 </section>
 
 
 <section class="header_under_menu">
 
     <div class="paige_menu">
-        <div class="paige_menu__item paige_menu__item_active">Главная</div>
-        <a href="gallery" class="paige_menu__item">Галерея</a>
-        <div class="paige_menu__item">Продукция</div>
-        <div class="paige_menu__item">Контакты</div>
+        <a href="index.html" class="paige_menu__item paige_menu__item_active">Главная</a>
+        <a href="gallery/index.html" class="paige_menu__item">Галерея</a>
+        <a href="production/index.html" class="paige_menu__item">Продукция</a>
+        <a href="contacts/index.html" class="paige_menu__item">Контакты</a>
     </div>
 
 </section>
+
+
+    <section class="header__mobile">
+        <div class="header__mobile__burger"></div>
+        <div class="header__mobile__burger__open">
+            <div class="header__mobile__burger__open__cross"></div>
+            <div class="header__mobile__burger__open__wrapper">
+            <a href="index.html" class="header__mobile__burger__open__item">Главная</a>
+            <a href="gallery/index.html" class="header__mobile__burger__open__item">Галерея</a>
+            <a href="production/index.html" class="header__mobile__burger__open__item">Продукция</a>
+            <a href="contacts/index.html" class="header__mobile__burger__open__item">Контакты</a>
+            </div>
+
+            <div class="languages__mobile">
+                <label class="region__mob active_language" for="language-russian__m">
+                    <img src="img/languages/Russia.png" alt="Russian">
+                    <input id="language-russian__m" checked="checked" name="language_m" type="radio">
+                    <span class="active_language"></span>
+                </label>
+                <label class="region__mob" for="language-england__m">
+                    <img src="img/languages/England.png" alt="England">
+                    <input id="language-england__m" name="language_m" type="radio">
+                    <span class="active_language"></span>
+                </label>
+                <label class="region__mob" for="language-armenian__m">
+                    <img src="img/languages/Armenia.png" alt="Armenian">
+                    <input id="language-armenian__m" name="language_m" type="radio">
+                    <span class="active_language"></span>
+                </label>
+            </div>
+
+
+        </div>
+        <div class="header__mobile__logo">VANAKN</div>
+        <div class="header__mobile__phone">
+            <img src="img/mobile/phone.png" alt="phone" class="header__mobile__phone__img">
+        </div>
+    </section>
+
+
 
 <section class="main_page">
 
@@ -79,19 +117,30 @@
         <div class="main_page__UTP__tittle">3 пункта почему у нас заказывают</div>
         <div class="main_page__UTP__wrapper">
             <div class="main_page__UTP__item">
+                <div class="main_page__UTP__main__wrapper">
                 <div class="main_page__UTP__item__number">1</div>
                 <div class="main_page__UTP__item__description">Контроль качества</div>
                 <img src="img/main_page/control.png" alt="control" class="main_page__UTP__item__img">
+                </div>
+                <div class="main_page__UTP__twink__wrapper">
+                    тексттеощфлывьл йцьвщшйоыдолвжлфыов зйщцшовдлжфывь
+                    фывлщйцовщцйгрофлдаь фывофщлыдвь
+                    фыщволйцвйзцлвйцовшйцовдыьыф фылвшцйо вйцшво йл
+                </div>
             </div>
             <div class="main_page__UTP__item">
+                <div class="main_page__UTP__main__wrapper">
                 <div class="main_page__UTP__item__number">2</div>
                 <div class="main_page__UTP__item__description">Храним камни на складе</div>
                 <img src="img/main_page/save.png" alt="save" class="main_page__UTP__item__img">
+                </div>
             </div>
             <div class="main_page__UTP__item">
+                <div class="main_page__UTP__main__wrapper">
                 <div class="main_page__UTP__item__number">3</div>
                 <div class="main_page__UTP__item__description">Быстро доставляем</div>
                 <img src="img/main_page/delivery.png" alt="delivery" class="main_page__UTP__item__img">
+                </div>
             </div>
         </div>
     </div>
@@ -160,6 +209,7 @@
     </div>
     <div class="footer__mid">
         <div class="footer__tittle">Контакты</div>
+        <div class="footer__border">
         <div class="footer__mid__tittle">Мы в соцсетях</div>
         <div class="footer__mid__wrapper">
             <a href="#" class="footer__mid__social"><img src="img/footer/facebook.png" alt="facebook"></a>
@@ -167,7 +217,7 @@
             <a href="#" class="footer__mid__social"><img src="img/footer/twitter.png" alt="twitter"></a>
             <a href="#" class="footer__mid__social"><img src="img/footer/google.png" alt="google"></a>
             <a href="#" class="footer__mid__social"><img src="img/footer/vk.png" alt="vk"></a>
-
+        </div>
         </div>
     </div>
     <div class="footer__right">
