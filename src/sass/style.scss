@@ -11,8 +11,11 @@ body{
 
 }
 
+
+@import "blocks/header_menu";
+@import "blocks/production";
 @import "blocks/main_page";
 @import "blocks/button";
-@import "blocks/header_menu";
 @import "blocks/footer";
 @import "blocks/gallery_slider";
+@import "blocks/contacts";

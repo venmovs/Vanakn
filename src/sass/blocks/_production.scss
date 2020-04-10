@@ -1,0 +1,227 @@
+.production{
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  &__nav{
+    margin-left: 20px;
+    &__stone{
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 50px;
+      &__descr{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 28px;
+
+        color: #000000;
+        margin-bottom: 15px;
+      }
+    }
+    &__interior{
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 120px;
+      &__descr{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 28px;
+
+        color: #000000;
+        margin-bottom: 15px;
+      }
+    }
+  }
+  &__product{
+    max-width: 1000px;
+    &__wrapper{
+      display: flex;
+      margin-bottom: 20px;
+      &__img{
+        width: 250px;
+        height: 150px;
+        border-radius: 10px;
+      }
+      &__descr{
+        width: 500px;
+        height: 150px;
+
+
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, #FFFFFF 100%);
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        margin-left: 10px;
+        padding: 10px;
+        &__tittle{
+          font-style: normal;
+          font-weight: normal;
+          font-size: 18px;
+          line-height: 21px;
+          color: #000000;
+        }
+        &__sub{
+          margin-top: 10px;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 16px;
+
+          color: #000000;
+
+        }
+      }
+    }
+  }
+}
+
+.button__nav__small{
+  width: 156px;
+  height: 55px;
+
+
+  background: #000000;
+  border-radius: 10px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 8px;
+
+
+  color: #FFFFFF;
+}
+
+.button__nav__big{
+  width: 292px;
+  height: 55px;
+
+  background: #000000;
+  border-radius: 10px;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 8px;
+
+  color: #FFFFFF;
+}
+
+.button__nav__active{
+  background: #0085FF;
+}
+
+@media screen and (max-width: 968px){
+  .production{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    &__nav{
+      width: 250px;
+      margin-left: 0;
+      height: 150px;
+      &__stone{
+        display: block;
+        margin-bottom: 10px;
+        &__descr{
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 39px;
+          text-align: center;
+
+          color: #FFFFFF;
+
+          width: 100%;
+          height: 40px;
+
+          background: #0085FF;
+          backdrop-filter: blur(4px);
+
+          border-radius: 10px;
+        }
+      }
+      &__interior{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 120px;
+        &__descr{
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 39px;
+          color: #FFFFFF;
+          width: 100%;
+          height: 40px;
+          text-align: center;
+          background: #0085FF;
+          backdrop-filter: blur(4px);
+
+          border-radius: 10px;
+        }
+      }
+    }
+    &__product{
+      max-width: 300px;
+      margin-bottom: 10px;
+      &__buttons{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      &__wrapper{
+        margin: 0 auto 20px;
+        display: flex;
+        flex-direction: column;
+        &__img{
+          margin: 0 auto 10px;
+          width: 250px;
+          height: 150px;
+          border-radius: 10px;
+        }
+        &__descr{
+          margin: 10px auto 0;
+          width: 250px;
+          height: 50px;
+
+
+          background: linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, #FFFFFF 100%);
+          box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+          border-radius: 10px;
+          padding: 10px;
+          &__tittle{
+            text-align: center;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 21px;
+            color: #000000;
+          }
+          &__sub{
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  .button__product{
+    margin-bottom: 10px;
+  }
+  .button__nav__small{
+    display: none;
+  }
+
+  .button__nav__big{
+    display: none;
+  }
+
+  .button__nav__active{
+    display: none;
+  }
+
+}
