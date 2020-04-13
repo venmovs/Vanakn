@@ -9,6 +9,11 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.7.4",
+    "@babel/preset-env": "^7.7.4",
+    "babel": "^6.23.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.6",
     "browser-sync": "^2.26.5",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^6.1.0",
@@ -16,7 +21,9 @@
     "gulp-cli": "^2.2.0",
     "gulp-file-include": "^2.1.1",
     "gulp-rename": "^1.4.0",
-    "gulp-sass": "^4.0.2"
+    "gulp-sass": "^4.0.2",
+    "webpack": "^4.41.2",
+    "webpack-stream": "^5.2.1"
   },
   "browserslist": [
     "last 1 version",
@@ -24,5 +31,7 @@
     "maintained node versions",
     "not dead"
   ],
-  "dependencies": {}
+  "dependencies": {
+    "merge-stream": "^2.0.0"
+  }
 }
