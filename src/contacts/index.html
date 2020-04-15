@@ -11,6 +11,22 @@
 </head>
 <body>
 
+
+<section class="modal">
+    <form class="modal__wrapper">
+        <div class="modal__cross__bg">
+            <div class="modal__cross"></div>
+        </div>
+        <div class="modal__wrapper__tittle">Укажите номер телефона чтобы получить
+            подробную информацию</div>
+        <label>
+            <input type="text" placeholder="Имя" class="modal__input">
+            <input type="tel" placeholder="Телефон" class="modal__input modal__input__tel">
+            <button class="modal__button">Позвоните мне</button>
+        </label>
+    </form>
+</section>
+
 <section class="header_menu">
 
 
@@ -44,17 +60,19 @@
 <section class="header_under_menu">
 
     <div class="paige_menu">
-        <a href="../index.html" class="paige_menu__item paige_menu__item_active">Главная</a>
+        <a href="../index.html" class="paige_menu__item">Главная</a>
         <a href="../gallery/index.html" class="paige_menu__item">Галерея</a>
         <a href="../production/index.html" class="paige_menu__item">Продукция</a>
-        <a href="index.html" class="paige_menu__item">Контакты</a>
+        <a href="index.html" class="paige_menu__item paige_menu__item_active">Контакты</a>
     </div>
 
 </section>
 
 
 <section class="header__mobile">
-    <div class="header__mobile__burger"></div>
+    <div class="header__mobile__burger__bg">
+        <div class="header__mobile__burger"></div>
+    </div>
     <div class="header__mobile__burger__open">
         <div class="header__mobile__burger__open__cross"></div>
         <div class="header__mobile__burger__open__wrapper">
@@ -157,6 +175,8 @@
         </div>
     </div>
 </section>
+
+<script src="../script.js"></script>
 
 </body>
 </html>

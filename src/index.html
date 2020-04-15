@@ -14,16 +14,18 @@
 
 
 <section class="modal">
-    <div class="modal__wrapper">
+    <form class="modal__wrapper">
+        <div class="modal__cross__bg">
         <div class="modal__cross"></div>
+        </div>
         <div class="modal__wrapper__tittle">Укажите номер телефона чтобы получить
             подробную информацию</div>
         <label>
             <input type="text" placeholder="Имя" class="modal__input">
-            <input type="text" placeholder="Телефон" class="modal__input modal__input__tel">
-            <button class="modal__button">Позвоните мне</button>
+            <input type="tel" placeholder="Телефон" class="modal__input modal__input__tel">
+            <button type="submit" class="modal__button">Позвоните мне</button>
         </label>
-    </div>
+    </form>
 </section>
 
 <section class="header_menu">
@@ -69,7 +71,9 @@
 
 
     <section class="header__mobile">
+        <div class="header__mobile__burger__bg">
         <div class="header__mobile__burger"></div>
+        </div>
         <div class="header__mobile__burger__open">
             <div class="header__mobile__burger__open__cross"></div>
             <div class="header__mobile__burger__open__wrapper">
@@ -240,5 +244,7 @@
     </div>
     </div>
 </section>
+
+<script src="script.js"></script>
 </body>
 </html>
