@@ -111,6 +111,7 @@ img {
     padding: 10px;
 
     background: #202327;
+    z-index: 1000;
 
     &__burger {
       position: relative;
@@ -149,6 +150,7 @@ img {
 
         background: rgba(0, 0, 0, 0.8);
         backdrop-filter: blur(4px);
+        z-index: 20;
 
         &__wrapper{
           display: block;
@@ -188,6 +190,13 @@ img {
           text-decoration: none;
           height: fit-content;
         }
+      }
+      &__bg{
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
     }
 

@@ -11,18 +11,24 @@
   &__cross{
     width: 28px;
     height: 0;
-    position: absolute;
-    right: 5%;
-    top: 5%;
     border-top: 1px solid #FFFFFF;
     transform: rotate(45deg);
     &:after{
       content: "";
       width: 28px;
-      position: absolute;
-
+      display: block;
       border-top: 1px solid #FFFFFF;
       transform: rotate(90deg);
+    }
+    &__bg{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      right: 5%;
+      top: 5%;
+      width: 40px;
+      height: 40px;
     }
   }
   &__wrapper{

@@ -23,7 +23,8 @@
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2",
     "webpack": "^4.41.2",
-    "webpack-stream": "^5.2.1"
+    "webpack-stream": "^5.2.1",
+    "core-js": "^3.4.2"
   },
   "browserslist": [
     "last 1 version",
