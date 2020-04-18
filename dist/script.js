@@ -3538,6 +3538,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_modals__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/modals */ "./src/js/modules/modals.js");
 /* harmony import */ var _modules_forms__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/forms */ "./src/js/modules/forms.js");
 /* harmony import */ var _modules_sliders__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/sliders */ "./src/js/modules/sliders.js");
+/* harmony import */ var _modules_filter__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/filter */ "./src/js/modules/filter.js");
+/* harmony import */ var _modules_switcher_mobile__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/switcher-mobile */ "./src/js/modules/switcher-mobile.js");
+
+
 
 
 
@@ -3547,7 +3551,52 @@ window.addEventListener('DOMContentLoaded', function () {
   Object(_modules_modals__WEBPACK_IMPORTED_MODULE_0__["default"])();
   Object(_modules_forms__WEBPACK_IMPORTED_MODULE_1__["default"])();
   Object(_modules_sliders__WEBPACK_IMPORTED_MODULE_2__["default"])('.sliderSelector .gallery_slider__wrapper__img', '', '.gallery_slider__wrapper__prev', '.gallery_slider__wrapper__next', '.gallery_slider__points .gallery_slider__points__item', '.gallery_slider__description__wrapper .gallery_slider__description', 'gallery_slider__points__item__active');
+  Object(_modules_filter__WEBPACK_IMPORTED_MODULE_3__["default"])();
+
+  try {
+    Object(_modules_switcher_mobile__WEBPACK_IMPORTED_MODULE_4__["default"])('.production__nav__stone__descr', '.button__nav__small');
+    Object(_modules_switcher_mobile__WEBPACK_IMPORTED_MODULE_4__["default"])('.production__nav__interior__descr', '.button__nav__big');
+  } catch (e) {}
 });
+
+/***/ }),
+
+/***/ "./src/js/modules/filter.js":
+/*!**********************************!*\
+  !*** ./src/js/modules/filter.js ***!
+  \**********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var core_js_modules_es_array_for_each__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es.array.for-each */ "./node_modules/core-js/modules/es.array.for-each.js");
+/* harmony import */ var core_js_modules_es_array_for_each__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_for_each__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var core_js_modules_web_dom_collections_for_each__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! core-js/modules/web.dom-collections.for-each */ "./node_modules/core-js/modules/web.dom-collections.for-each.js");
+/* harmony import */ var core_js_modules_web_dom_collections_for_each__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_collections_for_each__WEBPACK_IMPORTED_MODULE_1__);
+
+
+
+var filter = function filter() {
+  var tabOpener = document.querySelectorAll('.openFilter'),
+      tabs = document.querySelectorAll('.tabsElement');
+  tabOpener.forEach(function (btn) {
+    var id = btn.dataset.target;
+    var tab = document.getElementById(id);
+    btn.addEventListener('click', function () {
+      tabs.forEach(function (el) {
+        el.style.display = "none";
+      });
+      tabOpener.forEach(function (otherBtn) {
+        otherBtn.classList.remove('button__nav__active');
+      });
+      tab.style.display = "block";
+      btn.classList.add('button__nav__active');
+    });
+  });
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (filter);
 
 /***/ }),
 
@@ -3743,18 +3792,20 @@ var sliders = function sliders(slides, dir, prev, next, points, desc, activeClas
       slideIndex = items.length;
     }
 
-    items.forEach(function (item) {
-      item.style.display = "none";
-    });
-    items[slideIndex - 1].style.display = 'block';
-    potint.forEach(function (item) {
-      item.classList.remove(activeClass);
-    });
-    potint[slideIndex - 1].classList.add(activeClass);
-    descriptions.forEach(function (item) {
-      item.style.display = "none";
-    });
-    descriptions[slideIndex - 1].style.display = 'block';
+    try {
+      items.forEach(function (item) {
+        item.style.display = "none";
+      });
+      items[slideIndex - 1].style.display = 'block';
+      potint.forEach(function (item) {
+        item.classList.remove(activeClass);
+      });
+      potint[slideIndex - 1].classList.add(activeClass);
+      descriptions.forEach(function (item) {
+        item.style.display = "none";
+      });
+      descriptions[slideIndex - 1].style.display = 'block';
+    } catch (e) {}
   }
 
   showSlides(slideIndex);
@@ -3776,6 +3827,40 @@ var sliders = function sliders(slides, dir, prev, next, points, desc, activeClas
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (sliders);
+
+/***/ }),
+
+/***/ "./src/js/modules/switcher-mobile.js":
+/*!*******************************************!*\
+  !*** ./src/js/modules/switcher-mobile.js ***!
+  \*******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var core_js_modules_es_array_for_each__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es.array.for-each */ "./node_modules/core-js/modules/es.array.for-each.js");
+/* harmony import */ var core_js_modules_es_array_for_each__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_for_each__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var core_js_modules_web_dom_collections_for_each__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! core-js/modules/web.dom-collections.for-each */ "./node_modules/core-js/modules/web.dom-collections.for-each.js");
+/* harmony import */ var core_js_modules_web_dom_collections_for_each__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_collections_for_each__WEBPACK_IMPORTED_MODULE_1__);
+
+
+
+var switcher = function switcher(switchSelector, switchItem) {
+  var selector = document.querySelector(switchSelector),
+      items = document.querySelectorAll(switchItem);
+  selector.addEventListener('click', function () {
+    items.forEach(function (item) {
+      if (item.style.display == 'block') {
+        item.style.display = 'none';
+      } else {
+        item.style.display = 'block';
+      }
+    });
+  });
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (switcher);
 
 /***/ })
 

@@ -18,7 +18,8 @@
             <div class="modal__cross"></div>
         </div>
         <div class="modal__wrapper__tittle">Укажите номер телефона чтобы получить
-            подробную информацию</div>
+            подробную информацию
+        </div>
         <label>
             <input type="text" placeholder="Имя" class="modal__input">
             <input type="tel" placeholder="Телефон" class="modal__input modal__input__tel">
@@ -113,42 +114,60 @@
     <div class="production__nav">
         <div class="production__nav__stone">
             <div class="production__nav__stone__descr">Камни</div>
-            <button class="button__nav__small button__nav__active">Травертин</button>
-            <button class="button__nav__small">Туф</button>
-            <button class="button__nav__small">Базальт</button>
-            <button class="button__nav__small">Фельзит</button>
+            <button class="button__nav__small openFilter button__nav__active" data-target="travertin">Травертин</button>
+            <button class="button__nav__small openFilter" data-target="tuf">Туф</button>
+            <button class="button__nav__small openFilter" data-target="bazalt">Базальт</button>
+            <button class="button__nav__small openFilter" data-target="felzit">Фельзит</button>
         </div>
         <div class="production__nav__interior">
             <div class="production__nav__interior__descr">Экстерьер и Интерьер</div>
-            <button class="button__nav__big">Облицовочная Плита</button>
-            <button class="button__nav__big">Художественные элементы</button>
-            <button class="button__nav__big">Колонны</button>
-            <button class="button__nav__big">Балюстрады и перила</button>
-            <button class="button__nav__big">Карнизы и арки</button>
-            <button class="button__nav__big">Ступени</button>
-            <button class="button__nav__big">Подоконник и наличник</button>
+            <button class="button__nav__big openFilter" data-target="plate">Облицовочная Плита</button>
+            <button class="button__nav__big openFilter" data-target="art">Художественные элементы</button>
+            <button class="button__nav__big openFilter" data-target="column">Колонны</button>
+            <button class="button__nav__big openFilter" data-target="railing">Балюстрады и перила</button>
+            <button class="button__nav__big openFilter" data-target="arches">Карнизы и арки</button>
+            <button class="button__nav__big openFilter" data-target="steps">Ступени</button>
+            <button class="button__nav__big openFilter" data-target="sill">Подоконник и наличник</button>
 
         </div>
     </div>
-
-    <div class="production__product">
-        <div class="production__product__wrapper">
-            <img src="../img/production/stones.png" alt="" class="production__product__wrapper__img">
-            <div class="production__product__wrapper__descr">
-                <div class="production__product__wrapper__descr__tittle">Серый травертин</div>
-                <div class="production__product__wrapper__descr__sub">Мозаикой из травертина Splitface пригодна для
-                    использования во влажных помещениях (санузлах, саунах, хамамах), а также для отделки каминов или
-                    печей.
+    <div class="prod__wrapper">
+        <div id="travertin" class="production__product tabsElement">
+            <div  class="production__product__wrapper">
+                <img src="../img/production/stones.png" alt="" class="production__product__wrapper__img">
+                <div class="production__product__wrapper__descr">
+                    <div class="production__product__wrapper__descr__tittle">Серый травертин</div>
+                    <div class="production__product__wrapper__descr__sub">Мозаикой из травертина Splitface пригодна для
+                        использования во влажных помещениях (санузлах, саунах, хамамах), а также для отделки каминов или
+                        печей.
+                    </div>
                 </div>
             </div>
+            <div class="production__product__buttons">
+                <button class="button button__product">Получить образцы</button>
+                <button class="button button__product">Узнать стоимость</button>
+            </div>
         </div>
-        <div class="production__product__buttons">
-            <button class="button button__product">Получить образцы</button>
-            <button class="button button__product">Узнать стоимость</button>
+
+        <div id="tuf" class="production__product tabsElement">
+            <div  class="production__product__wrapper">
+                <img src="../img/production/stones.png" alt="" class="production__product__wrapper__img">
+                <div class="production__product__wrapper__descr">
+                    <div class="production__product__wrapper__descr__tittle">Туф</div>
+                    <div class="production__product__wrapper__descr__sub">Мозаикой из травертина Splitface пригодна для
+                        использования во влажных помещениях (санузлах, саунах, хамамах), а также для отделки каминов или
+                        печей.
+                    </div>
+                </div>
+            </div>
+            <div class="production__product__buttons">
+                <button class="button button__product">Получить образцы</button>
+                <button class="button button__product">Узнать стоимость</button>
+            </div>
         </div>
+
 
     </div>
-
 </section>
 
 <section class="footer">
