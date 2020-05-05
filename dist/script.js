@@ -3680,7 +3680,7 @@ var forms = function forms() {
     item.addEventListener('submit', function (e) {
       e.preventDefault();
       var formData = new FormData(item);
-      postData('vigen94@icloud.com', formData).then(function (res) {
+      postData('mail.php', formData).then(function (res) {
         console.log(res);
       }).catch(function () {
         return console.log('fail');

@@ -47,15 +47,13 @@ img {
 .logotype {
   position: absolute;
   left: 50%;
-  transform: translateX(-50%);
+
+  top: 30%;
+  transform: translate(-50%);
 
   &__tittle {
     display: block;
-    color: white;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 25px;
-    line-height: 10px;
+    width: 150px;
   }
 }
 

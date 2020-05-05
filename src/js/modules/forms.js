@@ -23,7 +23,7 @@ const forms = () =>{
 
            const formData = new FormData(item);
 
-            postData('vigen94@icloud.com' , formData).then(res => {
+            postData('mail.php', formData).then(res => {
                 console.log(res);
             }).catch(() => console.log('fail')).finally(() => {
                 clearInputs();
